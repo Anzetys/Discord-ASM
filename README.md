@@ -1,7 +1,6 @@
 # XASM
 
-
-![b147966d1b270a4008245092e91b93dc](https://github.com/Anzetys/Discord-ASM/assets/150568341/d74f53d9-f00e-4518-b266-1c9893525b59)
+![b147966d1b270a4008245092e91b93dc](https://github.com/Anzetys/Discord-ASM/assets/150568341/f54a2576-def1-491f-9868-fd9af4acad6e)
 
 
 
