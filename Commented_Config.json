@@ -1,4 +1,4 @@
-﻿{
+{
   "discordBot": {
     "token": "BOTtoken", // Discord Bot Token
     "controlChannelId": "PanelChannelID", // Panel Channel ID where control messages will be sent
@@ -15,10 +15,13 @@
     "updatePanelsInterval": 120000, // Update the player Count and server status cooldown
     "servers": [
       {
+        "RestartIfShutdown": true, // enables the server monitoring feature
+        "CheckEvery": 60, // Check if the server is down every 60 minutes
         "Panel_MessageID": null, // Discord message ID for the control panel (null to send a new one)
         "installDir": "C:\\server3", // Folder where your server files are
-        "name": "server3", // server Name
-        "exePath": "C:\\server3\\ShooterGame\\Binaries\\Win64\\ArkAscendedServer.exe", // Path to the server executable
+        "name": "name", // server Name
+        "exePath": "C:\\server3\\ShooterGame\\Binaries\\Win64", // Path to the server
+        "exe": "AsaApiLoader.exe", // server executable
         "mapName": "TheIsland_WP", // Name of the map to load
         "multiHome": "192.198.3.1", // IP address for binding
         "serverPort": "7777", // Port for game client connections
@@ -44,6 +47,8 @@
         "updateButtonLabel": "🕒 Update", // Label for the 'Update' button. Defaults if empty
         "PlayerListButtonLabel": "Online Players", // Label for the 'Online Players' button. Defaults if empty
         "rconButtonLabel": "Rcon", // Label for the 'Rcon' button. Defaults if empty
+        "ReasonButtonLabel": "Shutdown", // Label for the 'Shutdown' button. Defaults if empty
+        "restartButtonLabel": "Restart", // Label for the 'Restart' button. Defaults if empty
         "Add_Description_Fields_Below_This_Line": "As many as you want, must be DescriptionField(number) and have a matching Field(number)", // Just an spacer. remove if you wish
         "DescriptionField1": "✅ Start",
         "Field1": "Starts the server using the specified settings.",
@@ -56,14 +61,33 @@
         "DescriptionField5": "🕒 Update",
         "Field5": "Updates the server. Must be stopped first.",
         "DescriptionField6": "Player List",
-        "Field6": "Displays the Player List and their unique IDs"
+        "Field6": "Displays the Player List and their unique IDs",
+        "DescriptionField7": "Rcon",
+        "Field7": "Next messsage here will be sent to server as Rcon",
+        "DescriptionField8": "Shutdown",
+        "Field8": "Stops the server with a custom Shutdown Message",
+        "DescriptionField9": "Restart",
+        "Field9": "Restart the server with a custom Restart Message",
+        "Button_Labels": "Will Default if left empy or if this section does not exist",
         // Add more fields as needed. As many as you want, must be DescriptionField(number) and have a matching Field(number)"
+        "startButtonStyle": "success", // Button styles selector
+        "stopButtonStyle": "danger",
+        "killButtonStyle": "danger",
+        "updateButtonStyle": "primary",
+        "saveworldButtonStyle": "secondary",
+        "PlayerLisButtonStyle": "success",
+        "rconButtonStyle": "primary",
+        "ShutdownButtonStyle": "danger",
+        "RestartButtonStyle": "danger"
       },
       {
+        "RestartIfShutdown": true, // enables the server monitoring feature
+        "CheckEvery": 60, // Check if the server is down every 60 minutes
         "Panel_MessageID": null,
         "installDir": "C:\\server3",
-        "name": "PVP 10x",
-        "exePath": "C:\\Server2\\ShooterGame\\Binaries\\Win64\\ArkAscendedServer.exe",
+        "name": "PVP Potions 10x",
+        "exePath": "C:\\server3\\ShooterGame\\Binaries\\Win64", // Path to the server
+        "exe": "AsaApiLoader.exe", // server executable
         "mapName": "TheIsland_WP",
         "multiHome": "192.198.8.1",
         "serverPort": "25565",
@@ -101,13 +125,31 @@
         "DescriptionField5": "🕒 Update",
         "Field5": "Updates the server. Must be stopped first.",
         "DescriptionField6": "Player List",
-        "Field6": "Displays the Player List and their unique IDs"
+        "Field6": "Displays the Player List and their unique IDs",
+        "DescriptionField7": "Rcon",
+        "Field7": "Next messsage here will be sent to server as Rcon",
+        "DescriptionField8": "Shutdown",
+        "Field8": "Stops the server with a custom Shutdown Message",
+        "DescriptionField9": "Restart",
+        "Field9": "Restart the server with a custom Restart Message",
+        "Button_Labels": "Will Default if left empy or if this section does not exist",
+        "startButtonStyle": "success",
+        "stopButtonStyle": "danger",
+        "killButtonStyle": "danger",
+        "updateButtonStyle": "primary",
+        "saveworldButtonStyle": "secondary",
+        "PlayerLisButtonStyle": "success",
+        "rconButtonStyle": "primary",
+        "ShutdownButtonStyle": "danger",
+        "RestartButtonStyle": "danger"
       },
       {
+        "RestartIfShutdown": true, // enables the server monitoring feature
+        "CheckEvery": 60, // Check if the server is down every 60 minutes
         "Panel_MessageID": null,
-        "updateCommand": "+force_install_dir \"C:\\server1\" +login anonymous +app_update 376030 validate",
-        "name": "Modded  5x",
-        "exePath": "C:\\Path\\ShooterGame\\Binaries\\Win64\\ArkAscendedServer.exe",
+        "name": "Modded",
+        "exePath": "C:\\server3\\ShooterGame\\Binaries\\Win64", // Path to the server
+        "exe": "AsaApiLoader.exe", // server executable
         "mapName": "TheIsland_WP",
         "multiHome": "192.198.3.1",
         "serverPort": "7777",
@@ -146,12 +188,22 @@
         "Field5": "Updates the server. Must be stopped first.",
         "DescriptionField6": "Player List",
         "Field6": "Displays the Player List and their unique IDs",
-        "DescriptionField7": "Normal",
-        "Field7": "Normal Text",
-        "DescriptionField8": "Normal",
-        "Field8": "Normal Text",
-        "DescriptionField9": "Normal",
-        "Field9": "Normal Text"
+        "DescriptionField7": "Rcon",
+        "Field7": "Next messsage here will be sent to server as Rcon",
+        "DescriptionField8": "Shutdown",
+        "Field8": "Stops the server with a custom Shutdown Message",
+        "DescriptionField9": "Restart",
+        "Field9": "Restart the server with a custom Restart Message",
+        "Button_Labels": "Will Default if left empy or if this section does not exist",
+        "startButtonStyle": "success",
+        "stopButtonStyle": "danger",
+        "killButtonStyle": "danger",
+        "updateButtonStyle": "primary",
+        "saveworldButtonStyle": "secondary",
+        "PlayerLisButtonStyle": "success",
+        "rconButtonStyle": "primary",
+        "ShutdownButtonStyle": "danger",
+        "RestartButtonStyle": "danger"
       }
     ]
   },
