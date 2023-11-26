@@ -7,6 +7,10 @@
 
 ## :fire: Key Features:
 
+# :computer: Server Monitoring
+"RestartIfShutdown": true, // enables the server monitoring feature
+"CheckEvery": 60, // Check if the server is down every 60 minutes
+
 # :video_game: Server Control
  ## Start, Stop, Update And Rcon Commander.
 
